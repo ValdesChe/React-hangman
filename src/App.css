@@ -1,0 +1,108 @@
+.pendu {
+  display: flex;
+  flex-wrap: wrap;
+  width: 800px;
+  margin: auto;
+  user-select: none;
+  position: relative;
+}
+.remaining{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  right: 10px;
+  top: 15px;
+  background: rgb(41, 127, 184);
+  padding: 15px;
+  text-align: center
+}
+
+.guesses{
+  font-weight: 700;
+  font-size: 100px;
+  color: aliceblue;
+  line-height: 100px;
+
+}
+
+
+a.restart {
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  padding-right: 30px;
+  padding-left: 30px;
+  position: relative;
+  background-color: rgb(41, 127, 184);
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+
+
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+
+
+.letters {
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: 600px;
+  position: relative;
+  z-index: 2;
+}
+
+.guessWord {
+  margin-bottom: 40px;
+  margin-top: 25px;
+}
+
+li {
+  margin: 0 3px 3px 0;
+  padding: 0;
+  display: block;
+  float: left;
+  list-style: none;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 25px;
+  font-weight: 100;
+  text-transform: uppercase;
+  transition-duration: 0.2s;
+}
+
+li.word-letter {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-weight: 600;
+  font-size: 22px;
+  background: rgba(183, 223, 182, 0.87);
+}
+
+li.button {
+  background: #ebead2de;
+}
+
+li.used {
+  background: rgba(209, 207, 207, 0.616);
+  color: grey;
+}
+
+li.button:active {
+  transform: scale(0.9);
+  transition-duration: 0.1s;
+}
+
+li.button:hover {
+  opacity: 1;
+  transition-duration: 0.1s;
+  box-shadow: inset 0px 0 0 1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
